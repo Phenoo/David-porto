@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Silkscreen&family=Josefin+Sans&family=Jost&family=Roboto&family=Montserrat&family=Open+Sans&family=Poppins&display=swap');
+$red-color: #f53b3b;
+$grey: #242323;
+///////STYLES CODES//////
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: #111;
+    color: #ddd;
+    font-family: "Roboto";
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: "Jost";
+    letter-spacing: 2px;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+p {
+    font-size: 0.6rem;
+    font-family: 'Poppins';
+}
+
+.loader-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 1rem;
+    position: relative;
+}
+
+.bee {
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    animation: fly 3s linear infinite;
+    z-index: 99;
+    svg {
+        font-size: 2rem;
+        color: #c3c305;
+    }
+}
+
+@keyframes fly {
+    from {
+        right: 50%;
+    }
+    to {
+        right: 102%;
+    }
+}
+
+.bar {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: .5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.rotate {
+    .short {
+        transform: rotate(-60deg);
+        transition: 0.3s ease;
+    }
+    .long {
+        transform: rotate(-120deg);
+        margin: 0;
+        transition: 0.3s ease;
+    }
+}
+
+section {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #fff;
+    font-family: 'Montserrat';
+    span {
+        color: #c3c305;
+    }
+}
+
+.home {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    .text,
+    .img {
+        width: 50%;
+    }
+    img {
+        max-width: 400px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    h4 {
+        color: $red-color;
+        text-transform: capitalize;
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        margin: 5px 0;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.skills,
+.experience,
+.featured,
+.collab {
+    margin-bottom: 3rem;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+        background: $grey;
+        padding: 10px;
+        color: #fff;
+        transition: all 0.3s ease;
+        h4 {
+            margin: 10px 0;
+            font-size: 0.8rem;
+        }
+        p {
+            width: 100%;
+            font-size: 0.4rem;
+        }
+        svg {
+            color: $red-color;
+            font-size: 1.4rem;
+        }
+        button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: $red-color;
+            margin-top: 1rem;
+            font-size: 0.3rem;
+            font-weight: 600;
+            padding: 0.25rem;
+            border: 1px dotted $red-color;
+            svg {
+                font-size: 0.5rem;
+            }
+        }
+        &:hover {
+            background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+            background-position: right center;
+            transition: all 0.3s ease;
+            svg {
+                color: #fff;
+            }
+            button {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.button-comp {
+    button {
+        background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+        background-size: 200% auto;
+        padding: 0.5rem 1rem;
+        font-size: 0.5rem;
+        text-align: center;
+        display: block;
+        color: #fff;
+        transition: 0.5s;
+        border-radius: 2px;
+        &:hover {
+            background-position: right center;
+            color: #fff;
+        }
+    }
+}
+
+.experience {
+    h3 {
+        color: $red-color;
+    }
+    .experience-container {
+        display: grid;
+        gap: 1.25rem;
+        grid-template-columns: repeat(2, 1fr);
+        .grid {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .first {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            h3 {
+                font-size: 2rem;
+            }
+            h6 {
+                font-size: 1rem;
+                text-transform: capitalize;
+            }
+        }
+        .item {
+            background: $grey;
+            text-align: center;
+            padding: 10px;
+            border-radius: 2px;
+            h3 {
+                font-size: 0.9rem;
+            }
+            p {
+                text-transform: capitalize;
+                margin: 7px 0;
+                font-size: 0.5rem;
+                font-family: 'Jost';
+            }
+        }
+    }
+}
+
+.featured {
+    .featured-container {
+        .header {
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+        }
+        .text {
+            width: 60%;
+        }
+        h3 {
+            text-transform: capitalize;
+        }
+        p {
+            font-size: 0.5rem;
+        }
+    }
+}
+
+.collab {
+    background: $grey;
+    padding: 0.5rem;
+    .collab-container {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+            font-size: 1rem;
+        }
+        p {
+            margin-top: 1rem;
+            font-size: 0.5rem;
+        }
+    }
+}
+
+//////////////////CONTACT/////////////////////////////////
+.contact-form {
+    margin-top: 2rem;
+    form {
+        font-family: "Poppins";
+    }
+    .form-input {
+        border-bottom: 1px solid #dddd;
+        padding: 1rem 0;
+        margin: 1rem 0;
+        span {
+            font-size: 0.7rem;
+            color: #808080;
+        }
+    }
+    label {
+        display: block;
+        @media (max-width: 500px) {
+            font-size: 0.8rem;
+        }
+    }
+    input,
+    textarea {
+        background: none;
+        border: none;
+        outline: none;
+        color: $grey;
+        font-size: 1rem;
+        &::placeholder {
+            color: $grey;
+            font-size: 0.7rem;
+            text-transform: capitalize;
+            font-family: "Poppins";
+        }
+        #textarea {
+            width: 100%;
+        }
+    }
+}
+
+footer {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        .social-links {
+            li {
+                cursor: pointer;
+                svg {
+                    color: #fff;
+                    font-size: 0.8rem;
+                    &:hover {
+                        color: $red-color;
+                    }
+                }
+            }
+        }
+        .desco-text {
+            font-size: 0.7rem;
+            svg {
+                color: $red-color;
+            }
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.animate {
+    display: flex;
+    align-items: baseline;
+    justify-content: right;
+    margin: 10px 0;
+}
+
+@keyframes rota {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+circle,
+rect,
+line {
+    stroke-width: 10px;
+    stroke-linecap: round;
+    fill: transparent;
+}
+
+@media screen and (min-width: 800px) {
+    section {
+        width: 85%;
+    }
+    p {
+        font-size: 0.75em;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+    .home {
+        .img {
+            height: 466.4px;
+            img {
+                height: 100%;
+            }
+        }
+        h4 {
+            font-size: 1.25rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    .button-comp {
+        button {
+            font-size: 0.7rem;
+        }
+    }
+    .skills {
+        li {
+            svg {
+                font-size: 1.65rem;
+            }
+            padding: 1rem;
+            h4 {
+                font-size: 1rem;
+            }
+            p {
+                font-size: 0.7rem;
+            }
+            button {
+                font-size: 0.6rem;
+            }
+        }
+    }
+    .experience {
+        .experience-container {
+            .item {
+                padding: 1rem;
+                h3 {
+                    font-size: 1.4rem;
+                }
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+    .featured {
+        .featured-container {
+            h3 {
+                font-size: 1.4rem;
+            }
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+    .collab {
+        .collab-container {
+            h3 {
+                font-size: 1.4rem;
+            }
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+    footer {
+        .footer {
+            .social-links {
+                li {
+                    svg {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .desco-text {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section {
+        width: 95%;
+    }
+    .home {
+        h2 {
+            font-size: 1.25rem;
+        }
+        h4 {
+            font-size: 0.8rem;
+        }
+        p {
+            font-size: 0.4rem;
+        }
+    }
+    .skills {
+        ul {
+            gap: 7px;
+        }
+    }
+    .experience {
+        .experience-container {
+            gap: 0;
+            .item {
+                padding: 7px;
+            }
+        }
+    }
+    .button-comp {
+        button {
+            padding: 0.3rem 0.7rem;
+            font-size: 0.4rem;
+        }
+    }
+    .animate {
+        margin-top: 1rem;
+    }
+}
