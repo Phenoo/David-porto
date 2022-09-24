@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Silkscreen&family=Josefin+Sans&family=Jost&family=Roboto&family=Montserrat&family=Open+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Josefin+Sans&family=Jost&family=Roboto&family=Montserrat&family=Open+Sans&family=Poppins&display=swap');
 $red-color: #f53b3b;
 $grey: #242323;
 ///////STYLES CODES//////
@@ -19,6 +19,8 @@ body {
     background: #111;
     color: #ddd;
     font-family: "Roboto";
+    animation: change 5s infinite 1s linear;
+    transition: 0.3s ease;
 }
 
 a {
@@ -64,27 +66,6 @@ p {
     position: relative;
 }
 
-.bee {
-    position: absolute;
-    top: 30%;
-    right: 50%;
-    animation: fly 3s linear infinite;
-    z-index: 99;
-    svg {
-        font-size: 2rem;
-        color: #c3c305;
-    }
-}
-
-@keyframes fly {
-    from {
-        right: 50%;
-    }
-    to {
-        right: 102%;
-    }
-}
-
 .bar {
     width: 30px;
     height: 2px;
@@ -115,11 +96,13 @@ section {
     gap: 5px;
     align-items: center;
     text-transform: uppercase;
-    font-size: 0.8rem;
     color: #fff;
     font-family: 'Montserrat';
     span {
         color: #c3c305;
+    }
+    h4 {
+        font-size: 0.8rem;
     }
 }
 
@@ -171,6 +154,7 @@ section {
         padding: 10px;
         color: #fff;
         transition: all 0.3s ease;
+        border-radius: 4px;
         h4 {
             margin: 10px 0;
             font-size: 0.8rem;
@@ -206,6 +190,7 @@ section {
             }
             button {
                 color: #fff;
+                border: 1px dotted #fff;
             }
         }
     }
@@ -260,7 +245,7 @@ section {
             background: $grey;
             text-align: center;
             padding: 10px;
-            border-radius: 2px;
+            border-radius: 4px;
             h3 {
                 font-size: 0.9rem;
             }
@@ -368,7 +353,7 @@ footer {
             }
         }
         .desco-text {
-            font-size: 0.7rem;
+            font-size: 0.6rem;
             svg {
                 color: $red-color;
             }
@@ -386,10 +371,11 @@ footer {
     margin: 10px 0;
 }
 
-@keyframes rota {
-    100% {
-        transform: rotate(1turn);
-    }
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
 }
 
 circle,
@@ -498,6 +484,11 @@ line {
 @media screen and (max-width: 400px) {
     section {
         width: 95%;
+    }
+    .logo {
+        h4 {
+            font-size: 0.7rem;
+        }
     }
     .home {
         h2 {

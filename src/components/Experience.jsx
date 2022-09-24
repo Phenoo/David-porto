@@ -1,10 +1,11 @@
 import React from 'react'
 import CountUp, {useCountUp} from 'react-countup'
+import Rotate from './Rotate';
 
 const Experience = () => {
   useCountUp({
     ref: 'counter',
-    end: 12,
+    end: 6,
     enableScrollSpy: true,
     scrollSpyDelay: 200
   });
@@ -44,6 +45,8 @@ const Experience = () => {
           </div>
         </div>
       </div>
+      <Rotate />
+      
     </div>
   )
 }

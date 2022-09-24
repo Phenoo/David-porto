@@ -4,7 +4,7 @@ import '../styles/styles.css'
 
 const Rotate = () => {
   return (
-    <div className='animate'>
+    <div className='center'>
       <div class="loader">
         <div class="face">
           <div class="circle"></div>

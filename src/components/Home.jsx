@@ -1,7 +1,7 @@
 import React from 'react'
 import Img1 from '../assets/IMG-20220902-WA0043.jpg'
 import ButtonComponent from './ButtonComponent'
-import Rotate from './Rotate'
+import Cube from './Cube'
 
 const Home = () => {
   return (
@@ -16,7 +16,9 @@ const Home = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi maiores accusamus eius possimus aliquid illum assumenda reprehenderit nostrum molestias.
         </p>
         <ButtonComponent text='about me' />
-        <Rotate />
+        <div className="animate">
+  	      <Cube />
+        </div>
       </div>
     </div>
   )
