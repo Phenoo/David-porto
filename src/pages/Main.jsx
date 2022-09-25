@@ -10,12 +10,10 @@ const Main = () => {
   return (
     <section>
       <Home />
-      <Rotate />
       <Skills />
-      <Rotate />
       <Experience />
-      <Featured />
       <Rotate />
+      <Featured />
       <Contact />
       <Rotate />
     </section>
