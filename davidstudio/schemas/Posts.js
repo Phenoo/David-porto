@@ -5,8 +5,7 @@ export default {
     fields: [{
             name: 'image',
             title: 'Image',
-            type: 'array',
-            of: [{ type: 'image' }],
+            type: 'image',
             options: {
                 hotspot: true,
             }

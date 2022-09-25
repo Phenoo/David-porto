@@ -1,11 +1,11 @@
 import React from 'react'
-import Circle from '../components/Circle'
+import Animation from '../components/Animation'
 import Logo from '../components/Logo'
 
 const Loader = () => {
   return (
     <section className='loader-section'>
-      <Circle />
+      <Animation /> 
       <Logo />
     </section>
   )

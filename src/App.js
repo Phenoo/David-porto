@@ -7,6 +7,9 @@ import Main from './pages/Main'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
 import Loader from './pages/Loader'
+import SingleProject from './pages/SingleProject'
+
+import 'animate.css'
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -29,8 +32,10 @@ const App = () => {
       <Routes>
         <Route exact path='/' element={<Main />} />
         <Route path='/about' element={<About />} />
-        <Route path='/work' element={<Works />} />
+        <Route path='/works' element={<Works />} />
         <Route path='/contact' element={<ContactPage />} />
+        <Route path='/project/:slug' element={<SingleProject />} />
+        <Route path='*' element={<Main />} />
       </Routes>
       <Footer />
     </>

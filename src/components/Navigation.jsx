@@ -12,7 +12,10 @@ const Container = styled.nav`
 display: flex;
 align-items: center;
 justify-content: space-between;
-position: relative;
+z-index: 100;
+padding: 10px 0;
+
+
 
 
 #home, button{
@@ -141,7 +144,7 @@ const Navigation = () => {
 
 
   return (
-    <section>
+    <section className="navigation">
       <Container>
         <Link to='/'>
           <Logo />
@@ -199,8 +202,8 @@ const Navigation = () => {
 
         </MenuList>
         <button onClick={handleClick} className={click ? 'rotate' : ''}> 
-          <div class="bar short"></div>
-          <div class="bar long"></div>
+          <div className="bar short"></div>
+          <div className="bar long"></div>
         </button>
 
       </Container>

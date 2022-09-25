@@ -21,8 +21,8 @@ const Animation = () => {
   return (
     <div className="animate">
       <motion.svg
-        width='0'
-        height='50'
+        width='80'
+        height='80'
         viewBox='0 0 600 600'
         initial='hidden'
         animate='visible'

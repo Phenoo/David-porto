@@ -1,0 +1,21 @@
+.single-project {
+    h2 {
+        font-family: "Jost";
+        font-size: 1.25rem;
+        text-transform: uppercase;
+    }
+    .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        margin-top: 1.5rem;
+        max-width: 500px;
+        max-height: 400px;
+        object-fit: contain;
+    }
+    p {
+        margin-top: 1rem;
+    }
+}

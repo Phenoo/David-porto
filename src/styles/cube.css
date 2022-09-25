@@ -8,14 +8,14 @@
 
 .container {
     perspective: 800px;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     text-align: left;
 }
 
 .cube {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     position: relative;
     transform-style: preserve-3d;
 }
@@ -29,60 +29,60 @@
 }
 
 .front {
-    transform: rotateY(0deg) translateZ(50px);
+    transform: rotateY(0deg) translateZ(30px);
     background-color: #ff0055;
 }
 
 .right {
-    transform: rotateY(90deg) translateZ(50px);
+    transform: rotateY(90deg) translateZ(30px);
     background-color: #ffcc00;
 }
 
 .back {
-    transform: rotateY(180deg) translateZ(50px);
+    transform: rotateY(180deg) translateZ(30px);
     background-color: #f53b3b;
 }
 
 .left {
-    transform: rotateY(-90deg) translateZ(50px);
+    transform: rotateY(-90deg) translateZ(30px);
     background-color: #8855ff;
 }
 
 .top {
-    transform: rotateX(90deg) translateZ(50px);
+    transform: rotateX(90deg) translateZ(30px);
     background-color: #0099ff;
 }
 
 .bottom {
-    transform: rotateX(-90deg) translateZ(50px);
+    transform: rotateX(-90deg) translateZ(30px);
     background-color: lime;
 }
 
 @media screen and (max-width: 700px) {
     .container {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
     }
     .cube {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
     }
     .front {
-        transform: rotateY(0deg) translateZ(25px);
+        transform: rotateY(0deg) translateZ(15px);
     }
     .right {
-        transform: rotateY(90deg) translateZ(25px);
+        transform: rotateY(90deg) translateZ(15px);
     }
     .back {
-        transform: rotateY(180deg) translateZ(25px);
+        transform: rotateY(180deg) translateZ(15px);
     }
     .left {
-        transform: rotateY(-90deg) translateZ(25px);
+        transform: rotateY(-90deg) translateZ(15px);
     }
     .top {
-        transform: rotateX(90deg) translateZ(25px);
+        transform: rotateX(90deg) translateZ(15px);
     }
     .bottom {
-        transform: rotateX(-90deg) translateZ(25px);
+        transform: rotateX(-90deg) translateZ(15px);
     }
 }

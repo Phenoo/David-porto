@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import ButtonComponent from './ButtonComponent'
 
 const Contact = () => {
@@ -13,7 +14,9 @@ const Contact = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing eli agst dignissimos.
           </p>
         </div>
-        <ButtonComponent text="Contact" />
+        <Link to='/contact'>
+          <ButtonComponent text="Contact" />
+        </Link>
       </div>
     </div>
   )
