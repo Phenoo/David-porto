@@ -10,6 +10,7 @@ import Loader from './pages/Loader'
 import SingleProject from './pages/SingleProject'
 
 import 'animate.css'
+import Rotate from './components/Rotate'
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -37,6 +38,7 @@ const App = () => {
         <Route path='/project/:slug' element={<SingleProject />} />
         <Route path='*' element={<Main />} />
       </Routes>
+      <Rotate />
       <Footer />
     </>
   )
