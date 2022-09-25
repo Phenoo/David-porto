@@ -6,6 +6,7 @@ import {GoLocation} from 'react-icons/go'
 
 import emailjs from '@emailjs/browser'
 
+import ButtonComponent from '../components/ButtonComponent'
 
 const ContactPage = () => {
   const form = useRef();
@@ -45,7 +46,7 @@ const ContactPage = () => {
               <AiOutlineMail />
             </span>
             <p>
-            descometusah@gmail.com
+            davidobilo9@gmail.com
             </p>
           </div>
           <div>
@@ -53,7 +54,7 @@ const ContactPage = () => {
               <AiOutlinePhone />
             </span>
             <p>
-            +234 703 517 2208
+            +234 705 075 9896
           </p>
           </div>
           <div>
@@ -91,9 +92,7 @@ const ContactPage = () => {
               </label>
               <textarea name="message" id="textarea" cols="50" rows="10" placeholder="Hey David, can you work on this?" required></textarea>
             </div>
-            <button type="submit" className="circle" >
-              <p>send it</p>
-            </button>
+            <ButtonComponent text='send message' />
           </form>
         </section>
       </div>

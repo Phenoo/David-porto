@@ -85,6 +85,7 @@ const MenuList = styled.div`
 
     li{
       font-size: 1rem;
+      font-family: 'Jost';
     }
   }
   #icon{
@@ -189,7 +190,7 @@ const Navigation = () => {
             </a>
           </li>
           <li>
-          <a href="https://wa.me/2349019703944?text=hey+desco+__">
+          <a href="https://wa.me/2347050759896?text=hey+david,+__">
               <FaWhatsapp />
             </a>
           </li>

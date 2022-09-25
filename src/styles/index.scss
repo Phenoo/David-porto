@@ -364,6 +364,24 @@ section {
 }
 
 //////////////////CONTACT/////////////////////////////////
+.contact-details {
+    margin-top: 2rem;
+    text-transform: capitalize;
+    p {
+        font-size: 0.9rem;
+    }
+    h6 {
+        color: $grey;
+        text-transform: capitalize;
+    }
+    div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+}
+
 .contact-form {
     margin-top: 2rem;
     form {
