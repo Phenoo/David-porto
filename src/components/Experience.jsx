@@ -1,6 +1,5 @@
 import React from 'react'
 import CountUp, {useCountUp} from 'react-countup'
-import Rotate from './Rotate';
 
 const Experience = () => {
   useCountUp({
@@ -44,9 +43,7 @@ const Experience = () => {
             <p>awards</p>
           </div>
         </div>
-      </div>
-      <Rotate />
-      
+      </div>      
     </div>
   )
 }
