@@ -16,7 +16,7 @@ export default function App() {
       <div className="cube" ref={ref}>
         <div className="side front" />
         <div className="side left" />
-        <div className="side right">aaa</div>
+        <div className="side right" />
         <div className="side top" />
         <div className="side bottom" />
         <div className="side back" />

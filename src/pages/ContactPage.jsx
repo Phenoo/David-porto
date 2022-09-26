@@ -1,5 +1,4 @@
 import React, { useRef } from 'react'
-import {FaArrowLeft} from 'react-icons/fa'
 
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai'
 import {GoLocation} from 'react-icons/go'
@@ -7,6 +6,7 @@ import {GoLocation} from 'react-icons/go'
 import emailjs from '@emailjs/browser'
 
 import ButtonComponent from '../components/ButtonComponent'
+import { Link } from 'react-router-dom'
 
 const ContactPage = () => {
   const form = useRef();
@@ -31,9 +31,6 @@ const ContactPage = () => {
         <h4>
           let's work together
         </h4>
-      </div>
-      <div>
-        <FaArrowLeft />
       </div>
     </div>
     <div className="contact-container">
@@ -96,8 +93,9 @@ const ContactPage = () => {
           </form>
         </section>
       </div>
-
-
+      <Link to='/'>
+        <ButtonComponent text='back' />
+      </Link>
   </section>
   )
 }

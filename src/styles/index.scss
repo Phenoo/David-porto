@@ -78,7 +78,12 @@ p {
     transition: 0.3s ease-in-out;
 }
 
+.short {
+    margin: 0;
+}
+
 .rotate {
+    padding: 1.3rem 10px;
     .short {
         transform: rotate(-60deg);
         transition: 0.3s ease;
@@ -137,6 +142,7 @@ section {
         color: $red-color;
         text-transform: capitalize;
         font-size: 1rem;
+        font-family: "Jost";
     }
     h2 {
         font-size: 1.5rem;
@@ -277,6 +283,7 @@ section {
             h6 {
                 font-size: 1rem;
                 text-transform: capitalize;
+                font-family: "Jost";
             }
         }
         .item {
@@ -336,6 +343,11 @@ section {
             height: 100%;
             object-fit: contain;
             margin: 0 auto;
+            transition: all 0.3s ease;
+            &:hover {
+                transform: scale(0.9);
+                transition: all 0.3s ease;
+            }
         }
     }
     h4 {
@@ -365,7 +377,49 @@ section {
     }
 }
 
+//////////////////ABOUT/////////////////////////////////
+.about-page {
+    height: 100vh;
+}
+
+.tools {
+    h6 {
+        font-size: 1.5rem;
+    }
+    .tools-container {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        svg {
+            width: 35px;
+            height: 35px;
+        }
+        p {
+            font-family: "Jost";
+            font-size: 0.8rem;
+        }
+    }
+}
+
+//////////////////PROJECT/////////////////////////////////
+.project-page,
+.work-page {
+    height: 100vh;
+}
+
 //////////////////CONTACT/////////////////////////////////
+/// 
+.collab-part {
+    h4 {
+        text-transform: capitalize;
+    }
+}
+
 .contact-details {
     margin-top: 2rem;
     text-transform: capitalize;
@@ -373,7 +427,7 @@ section {
         font-size: 0.9rem;
     }
     h6 {
-        color: $grey;
+        color: #ddd;
         text-transform: capitalize;
     }
     div {
@@ -409,10 +463,10 @@ section {
         background: none;
         border: none;
         outline: none;
-        color: $grey;
+        color: #808080;
         font-size: 1rem;
         &::placeholder {
-            color: $grey;
+            color: #808080;
             font-size: 0.7rem;
             text-transform: capitalize;
             font-family: "Poppins";
@@ -441,6 +495,9 @@ footer {
         }
         .desco-text {
             font-size: 0.6rem;
+            display: flex;
+            align-items: center;
+            gap: 3px;
             svg {
                 color: $red-color;
             }
@@ -455,7 +512,7 @@ footer {
     display: flex;
     align-items: baseline;
     justify-content: right;
-    margin: 10px 0;
+    margin: 1rem 0;
 }
 
 .center {
@@ -608,6 +665,9 @@ line {
             gap: 0;
             .item {
                 padding: 7px;
+                p {
+                    margin: 2px 0;
+                }
             }
         }
     }
@@ -630,6 +690,20 @@ line {
         }
         h4 {
             font-size: 0.8rem;
+        }
+    }
+    .tools {
+        h6 {
+            font-size: 1.25rem;
+        }
+        .tools-container {
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+            p {
+                font-size: 0.5rem;
+            }
         }
     }
     .animate {

@@ -4,7 +4,7 @@ import CountUp, {useCountUp} from 'react-countup'
 const Experience = () => {
   useCountUp({
     ref: 'counter',
-    end: 6,
+    end: 4,
     enableScrollSpy: true,
     scrollSpyDelay: 200
   });

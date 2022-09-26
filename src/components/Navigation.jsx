@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Logo from './Logo'
 
-import {AiOutlineInstagram, AiFillBehanceSquare, AiFillLinkedin} from 'react-icons/ai'
+import {AiOutlineInstagram, AiFillLinkedin} from 'react-icons/ai'
 import { FaTwitter, FaWhatsapp} from 'react-icons/fa'
 
 
@@ -45,7 +45,10 @@ button{
     right: 10px;
     display: flex;
     flex-direction: column;
+    background: #f53b3b;
+    padding: 1.1rem 10px;
     z-index: 100;
+    border-radius: 50%;
   }
 }
 
@@ -87,19 +90,6 @@ const MenuList = styled.div`
       font-size: 1rem;
       font-family: 'Jost';
     }
-  }
-  #icon{
-    display: flex;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 20px;
-    right: 80px;
-    @media(max-width: 25em){
-      width: 30px;
-      height: 30px;
-    }
-
   }
 }
 
@@ -175,17 +165,12 @@ const Navigation = () => {
           </ul>
           {click && <ul className="social">
           <li>
-            <a href="#a">
-              <AiFillBehanceSquare />
-            </a>
-          </li>
-          <li>
-          <a href="https://twitter.com/DevDesco?t=fBV_tfM8NoTpNzFokYbtbw&s=09">
+          <a href="https://twitter.com/graphicke/status/1535027813459415042?s=46&t=BdgXbB4tlv!HDduAsw%LCQ">
               <FaTwitter />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/eze-paschal-158457233">
+            <a href="https://www.linkedin.com/in/david-obilo-77156423a">
               <AiFillLinkedin />
             </a>
           </li>
@@ -195,7 +180,7 @@ const Navigation = () => {
             </a>
           </li>
           <li>
-            <a href="https://link.medium.com/JZjTRn2IOsb">
+            <a href="https://www.instagram.com/shutterbgx_1?igshid=MDE3OWE1N2Q=">
               <AiOutlineInstagram />
             </a>
           </li>

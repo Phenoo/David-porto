@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+import ButtonComponent from '../components/ButtonComponent';
 import Project from '../components/Project';
 import {client} from '../lib/client'
 
@@ -14,7 +16,7 @@ const Works = () => {
     fetchData();
   }, [])
   return (
-    <div>
+    <section className='work-page'>
       <div className="featured-projects">
       { posts &&
             posts?.map(
@@ -22,7 +24,10 @@ const Works = () => {
             )
           }
       </div>
-    </div>
+      <Link to='/'>
+        <ButtonComponent text='back' />
+      </Link>
+    </section>
   )
 }
 

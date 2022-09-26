@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import {useParams} from 'react-router-dom'
+import {Link, useParams} from 'react-router-dom'
+import ButtonComponent from '../components/ButtonComponent'
 import {client, urlFor} from '../lib/client'
 import '../styles/single.scss'
 
@@ -22,12 +23,11 @@ const SingleProject = () => {
   })
 
   return (
-    <div className="featured">
-
+    <section className="project-page">
       {
         single && single.map(item => {
           return (
-            <section className="single-project">
+            <div className="single-project">
                 <h2>{item.name}</h2>
                 <div className="image">
                   <img src={urlFor(item.image)} alt="project" />
@@ -35,11 +35,14 @@ const SingleProject = () => {
                 <p>
                   {item.details} .
                 </p>
-            </section>
+            </div>
           )
         })
       }
-    </div>
+      <Link to='/'>
+        <ButtonComponent text='back' />
+      </Link>
+    </section>
   )
 }
 
