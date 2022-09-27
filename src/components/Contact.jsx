@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import ButtonComponent from './ButtonComponent'
 
 const Contact = () => {
@@ -11,12 +10,12 @@ const Contact = () => {
             Let's work together on your next project
           </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing eli agst dignissimos.
+            I am always open for exciting projects. Don't hesitate to contact me!'
           </p>
         </div>
-        <Link to='/contact'>
+        <a href='mailto:davidobilo9@gmail.com'>
           <ButtonComponent text="Contact" />
-        </Link>
+        </a>
       </div>
     </div>
   )

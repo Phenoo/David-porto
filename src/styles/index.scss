@@ -380,10 +380,34 @@ section {
 //////////////////ABOUT/////////////////////////////////
 .about-page {
     height: 100vh;
+    h4 {
+        margin-top: 2rem;
+    }
+    h6 {
+        font-style: italic;
+        margin: 1rem 0;
+    }
+    .about-text {
+        width: 100%;
+        line-height: 1.7rem;
+        font-family: "Jost";
+        font-size: 0.8rem;
+    }
+    @media (min-width: 768px) {
+        h4 {
+            font-size: 2rem;
+        }
+        .about-text {
+            width: 70%;
+            font-size: 1rem;
+            line-height: 2rem;
+        }
+    }
 }
 
 .tools {
-    h6 {
+    margin: 2rem 0;
+    h5 {
         font-size: 1.5rem;
     }
     .tools-container {
@@ -410,6 +434,14 @@ section {
 .project-page,
 .work-page {
     height: 100vh;
+}
+
+.project-category {
+    background: #808080;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 8px;
+    font-family: "Jost";
 }
 
 //////////////////CONTACT/////////////////////////////////

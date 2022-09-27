@@ -25,7 +25,7 @@ const Featured = () => {
         <div className="header">
           <div className="text">
             <h3>featured projects</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur  adipisicing elit omnis ut.</p>
+            <p>Here are some of the fascinating projects i have worked on over the years.</p>
           </div>
           <Link to='/works'>
             <ButtonComponent text="view all" />

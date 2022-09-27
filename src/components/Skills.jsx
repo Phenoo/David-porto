@@ -11,16 +11,19 @@ const data = [
     id: 1, 
     name: 'UI Design',
     icon: <AiOutlineSketch />,
+    text: 'I create aesthetically pleasing user interface for apps and websites.'
   },
   {
     id: 2, 
-    name: 'Product Design',
+    name: 'Art Direction',
     icon: <GiNotebook />,
+    text: 'I realize brand appearances for analogue and digital media.'
   },
   {
     id: 3, 
     name: 'Branding',
     icon: <BiShapeTriangle />,
+    text: 'With an equal measure of mind, heart and creative insight I love crafting unique business identities'
   }
 ]
 
@@ -39,7 +42,7 @@ const Skills = () => {
                   {item.icon}
                 </span>
                 <h4>{item.name}</h4>
-                <p>Lorem ipsum dolor amet consectetur adipisicing elis</p>
+                <p>{item.text}</p>
                 <div className="btn">
                   <Link to='/works'>
                     <button>

@@ -29,6 +29,9 @@ const SingleProject = () => {
           return (
             <div className="single-project">
                 <h2>{item.name}</h2>
+                <h6 className="project-category">
+                  #{item.category}
+                </h6>
                 <div className="image">
                   <img src={urlFor(item.image)} alt="project" />
                 </div>

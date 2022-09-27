@@ -34,14 +34,28 @@ const About = () => {
   ]
   return (
     <section className='about-page'>
-
-
-
-      <div className="tools">
+      <h4>ABOUT ME</h4>
         <h6>
-          Tools i used :
+          The new search for desgins that stand out, has created a chasm in the dsign sphere, which i hope to fill with my spontaneous
+          designs.
+        </h6>
+      <p className='about-text'>
+        I'm Obilo Daivd, A Young Nigerian, studying at the University of Nigeria, Nsukka.
+        I've worked on many branding & UI ptojects and events posters over the yearsin as associate and 
+        Lead designer.
 
-          <div className="tools-container">
+        <br />
+        <br />
+
+        Nowadays I am working on multiple projects as a freelancer (branding, illustrations, posters, UI/UX).
+        I also work in my free time on an investigation into the digitization and miniaturization of 
+        information through posters where i mix collage, metaphor and avant-garde design.
+      </p>
+      <div className="tools">
+        <h5>
+          Tools i used :
+        </h5>
+        <div className="tools-container">
             { 
               svgs.map((item, index) => {
                 return <div key={index}>
@@ -51,8 +65,7 @@ const About = () => {
               })
             }
           </div>
-        </h6>
-      </div>
+        </div>
       <Link to='/'>
         <ButtonComponent text='back' />
       </Link>

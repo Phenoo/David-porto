@@ -14,7 +14,7 @@ const Home = () => {
         <h4>hello, I'm David</h4>
         <h2>visual designer</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi maiores accusamus eius possimus aliquid illum assumenda reprehenderit nostrum molestias.
+          I'm based in Nigeria. Crafting brand identities that communicate and connect with people. Scroll to see some of my projects.
         </p>
         <Link to='/about'>
           <ButtonComponent text='about me' />
